@@ -1,0 +1,767 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   PALETA ESTRICTA ÚNICA: "NOCHE ALPINA" (DARK MODE EXPEDICIÓN)
+   Colores exclusivos: #0b0f14, #1a2633, #2f4a5d, #7aa6c2, #e6f2fb
+   ============================================================================ */
+:root {
+  color-scheme: dark;
+  --alpine-night: #0b0f14;
+  --alpine-slate: #1a2633;
+  --alpine-steel: #2f4a5d;
+  --alpine-ice: #7aa6c2;
+  --alpine-snow: #e6f2fb;
+
+  --bg-primary: #0b0f14;
+  --bg-secondary: #1a2633;
+  --bg-elevated: #1a2633;
+  --surface-elevated: #1a2633;
+  --surface-card: rgba(26, 38, 51, 0.88);
+  --surface-card-solid: #1a2633;
+  --surface-glass: rgba(11, 15, 20, 0.86);
+  --surface-pill: rgba(26, 38, 51, 0.92);
+
+  --text-main: #e6f2fb;
+  --text-secondary: rgba(230, 242, 251, 0.86);
+  --text-muted: rgba(230, 242, 251, 0.72);
+  --text-on-accent: #0b0f14;
+
+  --accent-primary: #7aa6c2;
+  --accent-primary-contrast: #0b0f14;
+  --accent-secondary: #e6f2fb;
+  --accent-secondary-contrast: #0b0f14;
+
+  --border-subtle: #2f4a5d;
+  --border-strong: #7aa6c2;
+  --border-accent: rgba(122, 166, 194, 0.72);
+
+  /* Design-engineering easing curves */
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  --blob-grad-1: #7aa6c2;
+  --blob-grad-2: #2f4a5d;
+  --blob-stage-bg: radial-gradient(circle at 48% 44%, #e6f2fb 0%, rgba(230, 242, 251, 0.78) 46%, #7aa6c2 100%);
+  --hero-liquid: linear-gradient(
+    125deg,
+    #0b0f14 0%,
+    #1a2633 22%,
+    #2f4a5d 44%,
+    #1a2633 64%,
+    #2f4a5d 80%,
+    #0b0f14 100%
+  );
+  --marquee-bg-1: linear-gradient(90deg, #7aa6c2 0%, #e6f2fb 50%, #7aa6c2 100%);
+  --marquee-text-1: #0b0f14;
+  --marquee-bg-2: linear-gradient(90deg, #1a2633 0%, #2f4a5d 50%, #1a2633 100%);
+  --marquee-text-2: #e6f2fb;
+  --shadow-card: 0 22px 48px -12px rgba(11, 15, 20, 0.88);
+  --shadow-glow: 0 0 36px rgba(122, 166, 194, 0.36);
+  --card-glow: 0 0 36px rgba(122, 166, 194, 0.36);
+}
+
+@layer base {
+  html {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    scroll-behavior: smooth;
+    scrollbar-color: #2f4a5d #0b0f14;
+    scrollbar-width: thin;
+  }
+
+  @media (pointer: fine) {
+    html {
+      overscroll-behavior: none;
+    }
+  }
+
+  body {
+    font-family: 'Poppins', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    overflow-x: hidden;
+    caret-color: #7aa6c2;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(122, 166, 194, 0.22);
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: #7aa6c2;
+    color: #0b0f14;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0b0f14;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #2f4a5d;
+    border: 2px solid #0b0f14;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #7aa6c2;
+  }
+
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    touch-action: manipulation;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-impact {
+    font-family: 'Oswald', 'Montserrat', sans-serif;
+    letter-spacing: 0.02em;
+  }
+
+  .font-mono-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* ============================================================================
+   TIPOGRAFÍA FLUIDA MOBILE-FIRST & CONTENEDORES CALIBRADOS
+   ============================================================================ */
+.fluid-hero-title {
+  font-size: clamp(2.05rem, 4.2vw + 1rem, 3.65rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.fluid-section-title {
+  font-size: clamp(1.65rem, 3vw + 0.8rem, 2.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.fluid-lead {
+  font-size: clamp(0.925rem, 0.55vw + 0.8rem, 1.125rem);
+  line-height: 1.62;
+  text-wrap: pretty;
+}
+
+.layout-container {
+  width: 100%;
+  max-width: 84rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 3vw, 2.5rem);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.overscroll-contain {
+  overscroll-behavior: contain;
+}
+
+/* ============================================================================
+   GEOMETRÍA ORGÁNICA, BLOBS Y CLIP-PATHS (ROMPIENDO LA CUADRÍCULA)
+   ============================================================================ */
+
+.section-diagonal-both {
+  clip-path: polygon(0 2.5vw, 100% 0, 100% calc(100% - 2.5vw), 0 100%);
+}
+
+.section-diagonal-reverse {
+  clip-path: polygon(0 0, 100% 2.5vw, 100% 100%, 0 calc(100% - 2.5vw));
+}
+
+.section-diagonal-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3vw), 0 100%);
+}
+
+@keyframes organicBlobMorph {
+  0%,
+  100% {
+    border-radius: 62% 38% 42% 58% / 48% 56% 44% 52%;
+    transform: rotate(0deg) scale(1);
+  }
+
+  33% {
+    border-radius: 40% 60% 62% 38% / 58% 42% 58% 42%;
+    transform: rotate(4deg) scale(1.03);
+  }
+
+  66% {
+    border-radius: 54% 46% 36% 64% / 42% 64% 36% 58%;
+    transform: rotate(-3deg) scale(0.98);
+  }
+}
+
+.blob-stage {
+  background: var(--blob-stage-bg);
+  border-radius: 62% 38% 42% 58% / 48% 56% 44% 52%;
+  animation: organicBlobMorph 11s ease-in-out infinite;
+  box-shadow:
+    inset 0 4px 16px rgba(230, 242, 251, 0.72),
+    0 12px 30px -6px rgba(11, 15, 20, 0.45);
+  transition: transform 320ms var(--ease-out-expo), box-shadow 280ms var(--ease-out-quart);
+}
+
+.blob-stage-hero {
+  background: var(--blob-stage-bg);
+  border-radius: 58% 42% 48% 52% / 44% 58% 42% 56%;
+  animation: organicBlobMorph 9s ease-in-out infinite;
+  box-shadow:
+    inset 0 6px 25px rgba(230, 242, 251, 0.85),
+    var(--shadow-glow);
+}
+
+/* Tarjeta Orgánica No-Cuadrada con Efecto 3D "Out of the Box" */
+.organic-product-card {
+  background: var(--surface-card);
+  backdrop-filter: blur(18px) saturate(155%);
+  -webkit-backdrop-filter: blur(18px) saturate(155%);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 2.35rem 1.25rem 2.5rem 1.4rem;
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 280ms var(--ease-out-expo),
+    border-radius 280ms var(--ease-out-expo),
+    border-color 220ms var(--ease-out-quart),
+    box-shadow 240ms var(--ease-out-quart);
+}
+
+/* Efecto 3D "Out of the Box" para prenda PNG transparente (sin will-change permanente en reposo) */
+.out-of-box-garment {
+  filter: drop-shadow(0 18px 18px rgba(11, 15, 20, 0.52));
+  transition: transform 320ms var(--ease-out-expo), filter 280ms var(--ease-out-quart);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .organic-product-card:hover {
+    transform: translateY(-8px) rotate(-0.6deg);
+    border-radius: 1.4rem 2.5rem 1.35rem 2.5rem;
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-card), var(--shadow-glow);
+  }
+
+  .organic-product-card:hover .blob-stage {
+    transform: scale(1.07) rotate(4deg);
+    box-shadow:
+      inset 0 4px 20px rgba(230, 242, 251, 0.88),
+      var(--shadow-glow);
+  }
+
+  .organic-product-card:hover .out-of-box-garment {
+    will-change: transform;
+    transform: translateY(-15px) scale(1.12) rotate(-2deg);
+    filter: drop-shadow(0 28px 24px rgba(11, 15, 20, 0.65));
+  }
+}
+
+/* ============================================================================
+   DEGRADADO LÍQUIDO NOCTURNO (PLASMA EN MOVIMIENTO - NOCHE ALPINA)
+   ============================================================================ */
+@keyframes liquidGradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 65% 20%;
+  }
+
+  50% {
+    background-position: 100% 60%;
+  }
+
+  75% {
+    background-position: 35% 90%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes plasmaRippleDrift {
+  0%,
+  100% {
+    transform: translate3d(-4%, -2%, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(5%, 4%, 0) scale(1.08);
+  }
+}
+
+.liquid-hero-canvas {
+  background:
+    radial-gradient(60% 55% at 18% 25%, rgba(122, 166, 194, 0.24) 0%, transparent 65%),
+    radial-gradient(50% 60% at 84% 72%, rgba(47, 74, 93, 0.55) 0%, transparent 68%),
+    var(--hero-liquid);
+  background-size: 280% 280%;
+  animation: liquidGradientFlow 14s ease-in-out infinite;
+}
+
+.liquid-hero-mesh {
+  background:
+    radial-gradient(circle at 28% 35%, rgba(122, 166, 194, 0.2) 0%, transparent 48%),
+    radial-gradient(circle at 72% 62%, rgba(230, 242, 251, 0.08) 0%, transparent 42%),
+    radial-gradient(circle at 52% 88%, rgba(47, 74, 93, 0.45) 0%, transparent 52%);
+  animation: plasmaRippleDrift 16s ease-in-out infinite;
+}
+
+/* ============================================================================
+   CLASES SEMÁNTICAS NOCHE ALPINA & GLASSMORPHISM
+   ============================================================================ */
+.theme-bg-primary {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+}
+
+.theme-bg-secondary {
+  background-color: var(--bg-secondary);
+  color: var(--text-main);
+}
+
+.theme-text-main {
+  color: var(--text-main);
+}
+
+.theme-text-secondary {
+  color: var(--text-secondary);
+}
+
+.theme-text-muted {
+  color: var(--text-muted);
+}
+
+.theme-accent-text {
+  color: var(--accent-primary);
+}
+
+.theme-accent2-text {
+  color: var(--accent-secondary);
+}
+
+.glass-navbar {
+  background: var(--surface-glass);
+  backdrop-filter: blur(22px) saturate(165%);
+  -webkit-backdrop-filter: blur(22px) saturate(165%);
+  border: 1.5px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+  color: var(--text-main);
+}
+
+.glass-card {
+  background: var(--surface-card);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  border: 1.5px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+  color: var(--text-main);
+}
+
+.glass-pill {
+  background: var(--surface-pill);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid var(--border-subtle);
+  box-shadow: 0 8px 22px rgba(11, 15, 20, 0.38);
+  color: var(--text-main);
+}
+
+.glass-modal {
+  background: var(--surface-glass);
+  backdrop-filter: blur(26px) saturate(175%);
+  -webkit-backdrop-filter: blur(26px) saturate(175%);
+  border: 2px solid var(--border-strong);
+  box-shadow: var(--shadow-card), var(--shadow-glow);
+  color: var(--text-main);
+}
+
+.glass-input {
+  background: rgba(11, 15, 20, 0.72);
+  border: 1.5px solid #2f4a5d;
+  color: #e6f2fb;
+  transition:
+    border-color 180ms var(--ease-out-quart),
+    box-shadow 180ms var(--ease-out-quart),
+    background-color 180ms var(--ease-out-quart);
+}
+
+.glass-input::placeholder {
+  color: rgba(230, 242, 251, 0.58);
+}
+
+.glass-input:focus {
+  border-color: #7aa6c2;
+  background: rgba(11, 15, 20, 0.9);
+  box-shadow: 0 0 0 3px rgba(122, 166, 194, 0.24);
+  outline: none;
+}
+
+/* Botones de Acento Alta Visibilidad (Noche Alpina) con respuesta táctil */
+.btn-neumorph-gold {
+  background: linear-gradient(135deg, #7aa6c2 0%, #e6f2fb 100%);
+  color: #0b0f14;
+  box-shadow:
+    0 8px 22px -4px rgba(11, 15, 20, 0.55),
+    inset 0 2px 3px rgba(230, 242, 251, 0.8),
+    inset 0 -3px 5px rgba(26, 38, 51, 0.25);
+  transition:
+    transform 160ms var(--ease-out-quart),
+    box-shadow 200ms var(--ease-out-quart);
+}
+
+.btn-neumorph-cyan {
+  background: #e6f2fb;
+  color: #0b0f14;
+  box-shadow:
+    0 8px 22px -4px rgba(11, 15, 20, 0.45),
+    inset 0 2px 3px rgba(230, 242, 251, 0.9),
+    inset 0 -3px 5px rgba(47, 74, 93, 0.25);
+  transition:
+    transform 160ms var(--ease-out-quart),
+    box-shadow 200ms var(--ease-out-quart);
+}
+
+.pressable-pill {
+  transition:
+    transform 160ms var(--ease-out-quart),
+    background-color 180ms var(--ease-out-quart),
+    border-color 180ms var(--ease-out-quart),
+    box-shadow 200ms var(--ease-out-quart);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-neumorph-gold:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow:
+      var(--shadow-glow),
+      inset 0 2px 4px rgba(230, 242, 251, 0.95),
+      inset 0 -3px 5px rgba(26, 38, 51, 0.2);
+  }
+
+  .btn-neumorph-cyan:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: var(--shadow-glow), inset 0 2px 4px rgba(230, 242, 251, 0.95);
+  }
+
+  .pressable-pill:hover {
+    transform: translateY(-1px) scale(1.02);
+  }
+}
+
+.btn-neumorph-gold:active,
+.btn-neumorph-cyan:active,
+.pressable-pill:active {
+  transform: scale(0.97);
+}
+
+/* Blobs Ambientales Líquidos */
+@keyframes liquidMorphOne {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+  }
+
+  33% {
+    transform: translate3d(45px, -30px, 0) scale(1.12) rotate(55deg);
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+  }
+
+  66% {
+    transform: translate3d(-35px, 35px, 0) scale(0.94) rotate(110deg);
+    border-radius: 35% 65% 35% 65% / 65% 35% 65% 35%;
+  }
+}
+
+.liquid-blob-cyan {
+  background: radial-gradient(circle, rgba(122, 166, 194, 0.48) 0%, transparent 70%);
+  filter: blur(55px);
+  animation: liquidMorphOne 14s ease-in-out infinite;
+  opacity: 0.45;
+}
+
+.liquid-blob-gold {
+  background: radial-gradient(circle, rgba(47, 74, 93, 0.65) 0%, transparent 70%);
+  filter: blur(55px);
+  animation: liquidMorphOne 17s ease-in-out reverse infinite;
+  opacity: 0.5;
+}
+
+.bg-tech-grid {
+  background-image:
+    linear-gradient(to right, rgba(47, 74, 93, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(47, 74, 93, 0.45) 1px, transparent 1px);
+  background-size: 46px 46px;
+}
+
+/* ============================================================================
+   MARQUEES INFINITOS & LEVITACIÓN CONTINUA
+   ============================================================================ */
+@keyframes marqueeScrollLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marqueeScrollRight {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScrollLeft 28s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track-reverse {
+  display: flex;
+  width: max-content;
+  animation: marqueeScrollRight 30s linear infinite;
+  will-change: transform;
+}
+
+.marquee-wrapper:hover .marquee-track,
+.marquee-wrapper:hover .marquee-track-reverse,
+.marquee-wrapper:focus-within .marquee-track,
+.marquee-wrapper:focus-within .marquee-track-reverse,
+.marquee-wrapper.marquee-paused .marquee-track,
+.marquee-wrapper.marquee-paused .marquee-track-reverse {
+  animation-play-state: paused;
+}
+
+@keyframes heroLevitate {
+  0%,
+  100% {
+    transform: translate3d(0, 0px, 0) rotate(-1.5deg);
+  }
+
+  50% {
+    transform: translate3d(0, -16px, 0) rotate(2deg);
+  }
+}
+
+@keyframes badgeFloatSlow {
+  0%,
+  100% {
+    transform: translate3d(0, 0px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+
+@keyframes floorShadowPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.45;
+  }
+
+  50% {
+    transform: scale(0.76);
+    opacity: 0.22;
+  }
+}
+
+.animate-levitate {
+  animation: heroLevitate 5.2s ease-in-out infinite;
+}
+
+.animate-badge-float {
+  animation: badgeFloatSlow 4s ease-in-out infinite;
+}
+
+.animate-badge-float-delayed {
+  animation: badgeFloatSlow 4.6s ease-in-out 1.2s infinite;
+}
+
+.animate-floor-shadow {
+  animation: floorShadowPulse 5.2s ease-in-out infinite;
+}
+
+/* Text Gradients */
+.text-gradient-hype {
+  background: linear-gradient(95deg, #e6f2fb 0%, #7aa6c2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(95deg, #7aa6c2 0%, #e6f2fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Escenario luminoso para modales y fichas técnicas */
+.product-stage-backdrop {
+  background:
+    radial-gradient(circle at 50% 44%, rgba(230, 242, 251, 0.2) 0%, rgba(122, 166, 194, 0.1) 46%, rgba(11, 15, 20, 0.94) 100%),
+    #0b0f14;
+}
+
+/* Dinamismo en carruseles sin saltos de scroll */
+.carousel-card-item {
+  transition: transform 280ms var(--ease-out-expo), z-index 0s;
+}
+
+@media (min-width: 768px) {
+  .carousel-card-item:nth-child(even) {
+    transform: translateY(8px);
+  }
+
+  .carousel-card-item:nth-child(odd) {
+    transform: translateY(-4px);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+  .carousel-card-item:hover {
+    z-index: 30;
+    transform: translateY(-6px);
+  }
+}
+
+/* Animaciones de entrada suaves por intersección (compositor-only) */
+.reveal-section {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition:
+    opacity 460ms var(--ease-out-expo),
+    transform 460ms var(--ease-out-expo);
+}
+
+.reveal-section.is-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Entrada nativa de modales y drawers (@starting-style) */
+.dialog-panel-enter {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  transition:
+    opacity 240ms var(--ease-drawer),
+    transform 280ms var(--ease-drawer);
+}
+
+@starting-style {
+  .dialog-panel-enter {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0) scale(0.97);
+  }
+}
+
+/* Accesibilidad WCAG AA/AAA: Skip Link & Focus Ring visible */
+.skip-link {
+  position: fixed;
+  top: -120px;
+  left: 16px;
+  z-index: 100;
+  padding: 10px 18px;
+  border-radius: 9999px;
+  background-color: #7aa6c2;
+  color: #0b0f14;
+  font-weight: 800;
+  font-size: 0.875rem;
+  box-shadow: var(--shadow-card), var(--shadow-glow);
+  transition: top 180ms var(--ease-out-quart);
+}
+
+.skip-link:focus-visible {
+  top: 16px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2.5px solid #7aa6c2;
+  outline-offset: 2px;
+}
+
+/* Línea de acento animada para separación de secciones / footer */
+.liquid-accent-strip {
+  background: linear-gradient(90deg, #7aa6c2, #e6f2fb, #2f4a5d, #7aa6c2);
+  background-size: 260% 100%;
+  animation: liquidGradientFlow 8s ease-in-out infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Respeto estricto a prefers-reduced-motion (Core Web Guidance / WCAG 2.3.3) */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  .liquid-hero-canvas,
+  .liquid-hero-mesh,
+  .liquid-accent-strip,
+  .blob-stage,
+  .blob-stage-hero,
+  .liquid-blob-cyan,
+  .liquid-blob-gold,
+  .marquee-track,
+  .marquee-track-reverse,
+  .animate-levitate,
+  .animate-badge-float,
+  .animate-badge-float-delayed,
+  .animate-floor-shadow {
+    animation: none !important;
+  }
+
+  .reveal-section {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: opacity 200ms ease !important;
+  }
+
+  .organic-product-card,
+  .out-of-box-garment,
+  .carousel-card-item,
+  .btn-neumorph-gold,
+  .btn-neumorph-cyan,
+  .pressable-pill {
+    transition: none !important;
+  }
+}

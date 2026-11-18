@@ -1,0 +1,2654 @@
+// Archivo autogenerado a partir del Catálogo Oficial WHA MOUNTAIN (79 productos en 4 categorías)
+// Nota: SHOW_PRICES está desactivado por defecto para priorizar cotizaciones directas y corporativas (B2B/B2C).
+
+export const BRAND_CONFIG = {
+  name: "WHA MOUNTAIN",
+  tagline: "Especialistas en Ropa Industrial para Minería, Alta Montaña y Frío Extremo en el Perú",
+  whatsappNumber: "51910363522",
+  whatsappDisplay: "910 363 522",
+  facebookUrl: "https://www.facebook.com/profile.php?id=100092635841171",
+  email: "wha.Mountain@gmail.com",
+  location: "Lima, Perú — Envíos a Nivel Nacional (Arequipa, Cusco, Junín, Pasco, Áncash, Cajamarca, Puno, Moquegua, Tacna y todo el Perú)",
+  showPrices: false, // Cambiar a true si se desea mostrar precios referenciales en el futuro
+};
+
+export type ProductCategory = "Casacas" | "Chalecos" | "Mamelucos y Conjuntos" | "Pantalones";
+
+export type ProductSector = "Minería & Alta Visibilidad" | "Alta Montaña & Ingenieros";
+
+export interface Product {
+  id: string;
+  code: string;
+  title: string;
+  category: ProductCategory;
+  sector: ProductSector;
+  fabric: string;
+  thermal: string;
+  tempRating: string;
+  reflective: string;
+  description: string;
+  highlights: string[];
+  referencePrice2024: number;
+  primaryImage: string;
+  images: string[];
+  sizes: string[];
+  isFeatured: boolean;
+  customizableLogo: boolean;
+}
+
+export const CATALOG_PRODUCTS: Product[] = [
+  {
+    "id": "cas-01",
+    "code": "CAS-01",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva 3M",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable con forro micropolar. Cinta REFLECTIVA 3M, capucha desmontable, 4 bolsillos con cierre impermeable, puño regulable con sistema Velcro. Cierre marca Rey con tapacierre.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-01.png",
+    "images": [
+      "./images/products/cas-01.png",
+      "./images/products/cas-01-2.png",
+      "./images/products/cas-01-3.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-02",
+    "code": "CAS-02",
+    "title": "Casaca Térmica Minera Hipora Impermeable con Thinsulate 3M y Cinta 3M",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Thinsulate 3M + Micropolar (-15°C)",
+    "tempRating": "-15°C / +4,200 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable acolchado con THINSULATE 3M y micropolar. Cinta REFLECTIVA 3M, capucha guardable, 5 bolsillos con cierre, puño regulable con sistema Velcro. Cierre marca Rey con tapacierre.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Aislamiento Térmico Thinsulate™ 3M",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-02.png",
+    "images": [
+      "./images/products/cas-02.png",
+      "./images/products/cas-02-2.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-03",
+    "code": "CAS-03",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable con forro térmico, capucha desmontable, 3 bolsillos con cierre impermeable, puño elasticado, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 100.0,
+    "primaryImage": "./images/products/cas-03.png",
+    "images": [
+      "./images/products/cas-03.png",
+      "./images/products/cas-03-2.png",
+      "./images/products/cas-03-3.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-04",
+    "code": "CAS-04",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable con forro micropolar, capucha desmontable, 3 bolsillos con cierre impermeable, puño regulable con sistema Velcro, cierre marca Rey con tapacierre.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-04.png",
+    "images": [
+      "./images/products/cas-04.png",
+      "./images/products/cas-04-2.png",
+      "./images/products/cas-04-3.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-05",
+    "code": "CAS-05",
+    "title": "Casaca Térmica Minera Hipora Impermeable con Thinsulate 3M y Cinta 3M",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Thinsulate 3M + Micropolar (-15°C)",
+    "tempRating": "-15°C / +4,200 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable acolchado con THINSULATE 3M y micropolar, cinta REFLECTIVA 3M, 2 bolsillos posa mano y con solapa, puño elasticado, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Aislamiento Térmico Thinsulate™ 3M",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-05.png",
+    "images": [
+      "./images/products/cas-05.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-06",
+    "code": "CAS-06",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable con forro térmico y micropolar, capucha desmontable, 4 bolsillos con cierre impermeable, puño regulable con sistema Velcro, cierre marca Rey con tapacierre.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-06.png",
+    "images": [
+      "./images/products/cas-06.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-07",
+    "code": "CAS-07",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta reflectiva coreana, 4 bolsillos con solapa, puño elasticado, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-07.png",
+    "images": [
+      "./images/products/cas-07.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-08",
+    "code": "CAS-08",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta reflectiva coreana, 2 bolsillos con cierre impermeable, basta y puño elasticado, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-08.png",
+    "images": [
+      "./images/products/cas-08.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-09",
+    "code": "CAS-09",
+    "title": "Casaca Alta Montaña Hipora Impermeable con Thinsulate 3M",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Thinsulate 3M + Termoreflectivo (-20°C)",
+    "tempRating": "-20°C / +4,500 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con THINSULATE 3M y Termoreflectivo, 2 bolsillos inferiores con cierre y 1 bolsillo interno. Puño regulable con sistema Velcro, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Aislamiento Térmico Thinsulate™ 3M",
+      "Panel Interior Termoreflectivo",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-09.png",
+    "images": [
+      "./images/products/cas-09.png",
+      "./images/products/cas-09-2.png",
+      "./images/products/cas-09-3.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-10",
+    "code": "CAS-10",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, 3 bolsillos con cierre impermeable, capucha guardable, puño con regulador sistema Velcro, cierre marca Rey con tapacierre con sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-10.png",
+    "images": [
+      "./images/products/cas-10.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-11",
+    "code": "CAS-11",
+    "title": "Casaca Minera Extrema Hipora Impermeable con Thinsulate 3M y Termoreflectivo",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Thinsulate 3M + Termoreflectivo (-20°C)",
+    "tempRating": "-20°C / +4,500 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable acolchado con THINSULATE 3M y Termoreflectivo para mantener el calor corporal y cuenta con cinta REFLECTIVA 3M, capucha desmontable, 1 bolsillo porta radio, 1 bolsillo con solapa, 2 bolsillos con cierre y 1 bolsillo interno. Puño elasticado, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Aislamiento Térmico Thinsulate™ 3M",
+      "Panel Interior Termoreflectivo",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Bolsillo Porta Radio Integrado",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-11.png",
+    "images": [
+      "./images/products/cas-11.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-12",
+    "code": "CAS-12",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, capucha desmontable, 2 bolsillos superiores y 2 inferiores con cierre. Puño regulable con sistema Velcro. Cierre marca Rey con tapacierre con Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-12.png",
+    "images": [
+      "./images/products/cas-12.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-13",
+    "code": "CAS-13",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva 3M",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta REFLECTIVA 3M, 3 bolsillos frontales con cierre y 1 bolsillo interno, puño regulable con sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-13.png",
+    "images": [
+      "./images/products/cas-13.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-14",
+    "code": "CAS-14",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, capucha desmontable, 2 bolsillos superiores con cierre, 2 bolsillos inferiores con cierre y 1 bolsillo interno. Puño regulable con Velcro. Cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-14.png",
+    "images": [
+      "./images/products/cas-14.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-15",
+    "code": "CAS-15",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta reflectiva coreana, 1 bolsillo porta radio, 2 bolsillos inferiores con cierre, puño regulable con sistema Velcro, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Bolsillo Porta Radio Integrado",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 130.0,
+    "primaryImage": "./images/products/cas-15.png",
+    "images": [
+      "./images/products/cas-15.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-16",
+    "code": "CAS-16",
+    "title": "Casaca Térmica Minera Hipora Oxford con Thinsulate 3M y Cinta 3M",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Oxford",
+    "thermal": "Thinsulate 3M + Micropolar (-15°C)",
+    "tempRating": "-15°C / +4,200 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora Oxford acolchado con THINSULATE 3M y micropolar, cinta REFLECTIVA 3M, 2 bolsillos con cierre, capucha desmontable, puño elasticado, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "Aislamiento Térmico Thinsulate™ 3M",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 150.0,
+    "primaryImage": "./images/products/cas-16.png",
+    "images": [
+      "./images/products/cas-16.png",
+      "./images/products/cas-16-2.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-17",
+    "code": "CAS-17",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta reflectiva coreana, en la parte superior 1 bolsillo con solapa y 1 con cierre, en la parte inferior 2 bolsillos con cierre. Cierre marca Rey con tapacierre sistema Velcro y broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-17.png",
+    "images": [
+      "./images/products/cas-17.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-18",
+    "code": "CAS-18",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta reflectiva coreana, 2 bolsillos con solapa y 2 bolsillos con cierre en la parte inferior. Cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-18.png",
+    "images": [
+      "./images/products/cas-18.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-19",
+    "code": "CAS-19",
+    "title": "Casaca Alta Montaña Acolchado Térmico Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Acolchado Térmico",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Casaca acolchada con fibra térmica y forro micropolar, 2 bolsillos con cierre en la parte inferior y capucha integrada.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico"
+    ],
+    "referencePrice2024": 85.0,
+    "primaryImage": "./images/products/cas-19.png",
+    "images": [
+      "./images/products/cas-19.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-20",
+    "code": "CAS-20",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable con forro micropolar, capucha guardable, 2 bolsillos con cierre impermeable, puño regulable con sistema Velcro, cierre marca Rey con tapacierre.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-20.png",
+    "images": [
+      "./images/products/cas-20.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-21",
+    "code": "CAS-21",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta reflectiva coreana, 2 bolsillos con solapa y 2 bolsillos con cierre, puño elasticado con regulador Velcro, capucha guardable, basta elasticada, cierre marca Rey.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-21.png",
+    "images": [
+      "./images/products/cas-21.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-22",
+    "code": "CAS-22",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, 2 bolsillos con cierre, capucha guardable, cierre marca Rey con tapacierre con sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-22.png",
+    "images": [
+      "./images/products/cas-22.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-23",
+    "code": "CAS-23",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, 4 bolsillos con cierre impermeable, puño con puñera térmica interior, capucha guardable.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Guardable en Cuello"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-23.png",
+    "images": [
+      "./images/products/cas-23.png",
+      "./images/products/cas-23-2.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-24",
+    "code": "CAS-24",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, capucha desmontable, 3 bolsillos frontales con cierre y 1 bolsillo en la manga con cierre. Tapacierre con broche y sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Desmontable"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-24.png",
+    "images": [
+      "./images/products/cas-24.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-25",
+    "code": "CAS-25",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, capucha guardable, 3 bolsillos con cierre impermeable, puño regulable con sistema Velcro, tapacierre con Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Guardable en Cuello"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-25.png",
+    "images": [
+      "./images/products/cas-25.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-26",
+    "code": "CAS-26",
+    "title": "Casaca Alta Montaña Taslan Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Taslan",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Taslan con forro micropolar, 3 bolsillos con cierre impermeable, puño regulable con sistema Velcro, cierre principal impermeable.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Forro Interior Micropolar Antialérgico"
+    ],
+    "referencePrice2024": 85.0,
+    "primaryImage": "./images/products/cas-26.png",
+    "images": [
+      "./images/products/cas-26.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-27",
+    "code": "CAS-27",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, 3 bolsillos con cierre impermeable, capucha desmontable, puño regulable con sistema Velcro, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-27.png",
+    "images": [
+      "./images/products/cas-27.png",
+      "./images/products/cas-27-2.png",
+      "./images/products/cas-27-3.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-28",
+    "code": "CAS-28",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta reflectiva coreana, 2 bolsillos con solapa en la parte inferior y 1 bolsillo porta radio en la parte superior, puño elasticado, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Bolsillo Porta Radio Integrado",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-28.png",
+    "images": [
+      "./images/products/cas-28.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-29",
+    "code": "CAS-29",
+    "title": "Casaca Minera Extrema Hipora Impermeable con Thinsulate 3M y Termoreflectivo",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Thinsulate 3M + Termoreflectivo (-20°C)",
+    "tempRating": "-20°C / +4,500 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable acolchado con THINSULATE 3M y Termoreflectivo, cinta REFLECTIVA 3M, 4 bolsillos con cierre, 1 bolsillo con cierre en la manga y 1 bolsillo interno, puño y basta elasticada, cierre marca Rey.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Aislamiento Térmico Thinsulate™ 3M",
+      "Panel Interior Termoreflectivo",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-29.png",
+    "images": [
+      "./images/products/cas-29.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-30",
+    "code": "CAS-30",
+    "title": "Casaca Táctica Softshell Cortaviento Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Softshell",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Softshell impermeable cortaviento, 2 bolsillos con cierre impermeable, puños con puñera interior ergonómica, cierre principal impermeable.",
+    "highlights": [
+      "100% Impermeable y Cortaviento"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-30.png",
+    "images": [
+      "./images/products/cas-30.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-31",
+    "code": "CAS-31",
+    "title": "Casaca Táctica Softshell Cortaviento Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Softshell",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Softshell impermeable cortaviento, 3 bolsillos con cierre impermeable, puños regulables con sistema Velcro, capucha desmontable, cierre principal impermeable.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Capucha Desmontable"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-31.png",
+    "images": [
+      "./images/products/cas-31.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-32",
+    "code": "CAS-32",
+    "title": "Casaca Térmica Industrial Taslan con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Taslan",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Taslan acolchado con fibra térmica y micropolar, cinta reflectiva coreana, 3 bolsillos con cierre impermeable, capucha desmontable, porta lapicero en la manga, puño elasticado, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-32.png",
+    "images": [
+      "./images/products/cas-32.png",
+      "./images/products/cas-32-2.png",
+      "./images/products/cas-32-3.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-33",
+    "code": "CAS-33",
+    "title": "Casaca Minera Extrema Hipora Impermeable con Thinsulate 3M y Termoreflectivo",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Thinsulate 3M + Termoreflectivo (-20°C)",
+    "tempRating": "-20°C / +4,500 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable acolchado con THINSULATE 3M y Termoreflectivo para mantener el calor corporal, cinta REFLECTIVA 3M, capucha desmontable, 4 bolsillos con cierre, 2 bolsillos porta radio y 1 bolsillo interno. Puño elasticado, porta lapicero en la manga, tapacierre con sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Aislamiento Térmico Thinsulate™ 3M",
+      "Panel Interior Termoreflectivo",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Bolsillo Porta Radio Integrado",
+      "Capucha Desmontable"
+    ],
+    "referencePrice2024": 160.0,
+    "primaryImage": "./images/products/cas-33.png",
+    "images": [
+      "./images/products/cas-33.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-34",
+    "code": "CAS-34",
+    "title": "Casaca Térmica Industrial Drill Algodón Nuevo Mundo con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Drill Algodón Nuevo Mundo",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Drill con forro micropolar, cinta reflectiva coreana, cuello camisero, 2 bolsillos con solapa, puño elasticado, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-34.png",
+    "images": [
+      "./images/products/cas-34.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-35",
+    "code": "CAS-35",
+    "title": "Casaca Alta Montaña Hipora Impermeable con Thinsulate 3M",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Thinsulate 3M + Micropolar (-15°C)",
+    "tempRating": "-15°C / +4,200 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con THINSULATE 3M y micropolar, 3 bolsillos con cierre impermeable, 1 bolsillo con cierre en la manga, capucha desmontable, puño con sistema Velcro, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Aislamiento Térmico Thinsulate™ 3M",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-35.png",
+    "images": [
+      "./images/products/cas-35.png",
+      "./images/products/cas-35-2.png",
+      "./images/products/cas-35-3.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-36",
+    "code": "CAS-36",
+    "title": "Casaca Táctica Softshell Cortaviento Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Softshell",
+    "thermal": "Forro Termoreflectivo (-10°C)",
+    "tempRating": "-10°C / +3,800 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Softshell impermeable con forro interior Termoreflectivo, 2 bolsillos frontales con cierre y 1 bolsillo táctico en la manga.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Panel Interior Termoreflectivo"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-36.png",
+    "images": [
+      "./images/products/cas-36.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-37",
+    "code": "CAS-37",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, 4 bolsillos con cierre, puño elasticado, capucha con visera de protección de lluvia y elástico interno, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 135.0,
+    "primaryImage": "./images/products/cas-37.png",
+    "images": [
+      "./images/products/cas-37.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-38",
+    "code": "CAS-38",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva 3M",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta REFLECTIVA 3M, 4 bolsillos con cierre impermeable y 1 bolsillo interno. Puño regulable con broche, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-38.png",
+    "images": [
+      "./images/products/cas-38.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-39",
+    "code": "CAS-39",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora impermeable con forro micropolar, disponible con cinta reflectiva coreana o versión alta montaña sin cinta reflectiva, 4 bolsillos con cierre, capucha guardable, puño elasticado, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-39.png",
+    "images": [
+      "./images/products/cas-39.png",
+      "./images/products/cas-39-2.png",
+      "./images/products/cas-39-3.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-40",
+    "code": "CAS-40",
+    "title": "Casaca Minera Extrema Hipora Impermeable con Thinsulate 3M y Termoreflectivo",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Thinsulate 3M + Termoreflectivo (-20°C)",
+    "tempRating": "-20°C / +4,500 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable acolchado con THINSULATE 3M y Termoreflectivo, cinta REFLECTIVA 3M, 2 bolsillos porta radio y 2 bolsillos con solapa y posa mano, puño elasticado, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Aislamiento Térmico Thinsulate™ 3M",
+      "Panel Interior Termoreflectivo",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Bolsillo Porta Radio Integrado",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 160.0,
+    "primaryImage": "./images/products/cas-40.png",
+    "images": [
+      "./images/products/cas-40.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-41",
+    "code": "CAS-41",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica (-10°C)",
+    "tempRating": "-10°C / +3,800 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y forro tafeta, 3 bolsillos con cierre, capucha guardable, puño elasticado, cierre marca Rey con tapacierre y broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-41.png",
+    "images": [
+      "./images/products/cas-41.png",
+      "./images/products/cas-41-2.png",
+      "./images/products/cas-41-3.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-42",
+    "code": "CAS-42",
+    "title": "Casaca Minera Extrema Hipora Impermeable con Thinsulate 3M y Termoreflectivo",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Thinsulate 3M + Termoreflectivo (-20°C)",
+    "tempRating": "-20°C / +4,500 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable acolchado con THINSULATE 3M y Termoreflectivo, cinta REFLECTIVA 3M, 2 bolsillos porta radio y 4 bolsillos con cierre, puño elasticado, capucha desmontable, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Aislamiento Térmico Thinsulate™ 3M",
+      "Panel Interior Termoreflectivo",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Bolsillo Porta Radio Integrado",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 160.0,
+    "primaryImage": "./images/products/cas-42.png",
+    "images": [
+      "./images/products/cas-42.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-43",
+    "code": "CAS-43",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora impermeable con forro micropolar, cinta reflectiva coreana, 2 bolsillos con solapa, puño elasticado, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-43.png",
+    "images": [
+      "./images/products/cas-43.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-44",
+    "code": "CAS-44",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora impermeable acolchado con fibra térmica y forro micropolar, cinta reflectiva coreana, 2 bolsillos con cierre, 2 bolsillos con solapa, capucha desmontable, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-44.png",
+    "images": [
+      "./images/products/cas-44.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-45",
+    "code": "CAS-45",
+    "title": "Casaca Térmica Industrial Hipora Oxford con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Oxford",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora Oxford acolchado con fibra térmica y forro micropolar, cinta reflectiva coreana, 4 bolsillos con cierre, puño y basta elasticada, cierre marca Rey.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-45.png",
+    "images": [
+      "./images/products/cas-45.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-46",
+    "code": "CAS-46",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva 3M",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta REFLECTIVA 3M, 3 bolsillos con cierre, puño regulable con sistema Velcro, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-46.png",
+    "images": [
+      "./images/products/cas-46.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-47",
+    "code": "CAS-47",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, 4 bolsillos con cierre, puño regulable con sistema Velcro, cierre marca Rey y tapacierre con broche.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-47.png",
+    "images": [
+      "./images/products/cas-47.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-48",
+    "code": "CAS-48",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, 3 bolsillos con cierre, puño regulable con sistema Velcro, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-48.png",
+    "images": [
+      "./images/products/cas-48.png",
+      "./images/products/cas-48-2.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-49",
+    "code": "CAS-49",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, cinta reflectiva coreana, 2 bolsillos con solapa, cierre marca Rey y tapacierre con broches.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-49.png",
+    "images": [
+      "./images/products/cas-49.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-50",
+    "code": "CAS-50",
+    "title": "Casaca Alta Montaña Taslan Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Taslan",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Taslan engomado acolchado con fibra térmica y micropolar, 2 bolsillos con cierre, puño elástico, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 85.0,
+    "primaryImage": "./images/products/cas-50.png",
+    "images": [
+      "./images/products/cas-50.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-51",
+    "code": "CAS-51",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, cinta reflectiva coreana, capucha guardable, 4 bolsillos con cierre, cierre marca Rey.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-51.png",
+    "images": [
+      "./images/products/cas-51.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-52",
+    "code": "CAS-52",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, capucha desmontable, 3 bolsillos con cierre, puño regulable con sistema Velcro, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-52.png",
+    "images": [
+      "./images/products/cas-52.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-53",
+    "code": "CAS-53",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, cinta reflectiva coreana, 3 bolsillos con cierre, puño regulable con sistema Velcro, cierre marca Rey.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-53.png",
+    "images": [
+      "./images/products/cas-53.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-54",
+    "code": "CAS-54",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, 2 bolsillos con cierre, puño regulable con sistema Velcro, cierre marca Rey y tapacierre con broches.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-54.png",
+    "images": [
+      "./images/products/cas-54.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-55",
+    "code": "CAS-55",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, cinta reflectiva coreana, 4 bolsillos con cierre, puño elástico, cierre marca Rey y tapacierre con broche.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-55.png",
+    "images": [
+      "./images/products/cas-55.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-56",
+    "code": "CAS-56",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, 3 bolsillos con cierre, puño regulable con sistema Velcro, cierre marca Rey y tapacierre sistema Velcro.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 110.0,
+    "primaryImage": "./images/products/cas-56.png",
+    "images": [
+      "./images/products/cas-56.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-57",
+    "code": "CAS-57",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, 3 bolsillos con cierre, puño regulable con sistema Velcro, capucha guardable, cierre marca Rey y tapacierre sistema Velcro.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 110.0,
+    "primaryImage": "./images/products/cas-57.png",
+    "images": [
+      "./images/products/cas-57.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-58",
+    "code": "CAS-58",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, 3 bolsillos con cierre, puño elasticado, capucha desmontable, cierre marca Rey y tapacierre con broche.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-58.png",
+    "images": [
+      "./images/products/cas-58.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-59",
+    "code": "CAS-59",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, 3 bolsillos con cierre, puño elasticado, capucha guardable, cierre marca Rey y tapacierre con broche.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-59.png",
+    "images": [
+      "./images/products/cas-59.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-60",
+    "code": "CAS-60",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, 3 bolsillos con cierre, puño elasticado, capucha guardable, cierre marca Rey.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-60.png",
+    "images": [
+      "./images/products/cas-60.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-61",
+    "code": "CAS-61",
+    "title": "Casaca Alta Montaña Hipora Impermeable Térmica Impermeable",
+    "category": "Casacas",
+    "sector": "Alta Montaña & Ingenieros",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Sin Cinta Reflectiva",
+    "description": "Hipora acolchado con fibra térmica y forro micropolar, 2 bolsillos con cierre, puño regulable con sistema Velcro, capucha guardable, cierre marca Rey y tapacierre sistema Velcro.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-61.png",
+    "images": [
+      "./images/products/cas-61.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-62",
+    "code": "CAS-62",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva 3M",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta REFLECTIVA 3M, 2 bolsillos con tapa, puño regulable con sistema Velcro, cierre marca Rey con tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/cas-62.png",
+    "images": [
+      "./images/products/cas-62.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "cas-63",
+    "code": "CAS-63",
+    "title": "Casaca Térmica Industrial Hipora Impermeable con Cinta Reflectiva Coreana",
+    "category": "Casacas",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva Coreana",
+    "description": "Hipora impermeable acolchado con fibra térmica y micropolar, cinta reflectiva coreana, 4 bolsillos con tapa, puño regulable elástico, capucha desmontable, cierre marca Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva Coreana)",
+      "Capucha Desmontable",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 95.0,
+    "primaryImage": "./images/products/cas-63.png",
+    "images": [
+      "./images/products/cas-63.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "ch-01",
+    "code": "CH-01",
+    "title": "Chaleco Geólogo Supervisor Drill 100% Algodón Nuevo Mundo con Cinta 3M",
+    "category": "Chalecos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Drill Algodón Nuevo Mundo",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Tela Drill 100% algodón Nuevo Mundo con cinta REFLECTIVA 3M para mayor visibilidad, con 2 bolsillos superiores con solapa. En la parte inferior tiene 2 bolsillos con cierre Rey y 3 bolsillos con solapa.",
+    "highlights": [
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 65.0,
+    "primaryImage": "./images/products/ch-01.png",
+    "images": [
+      "./images/products/ch-01.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "ch-02",
+    "code": "CH-02",
+    "title": "Chaleco Industrial Supervisor Drill Tecnología con Cinta 3M",
+    "category": "Chalecos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Drill Tecnología",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Tela Drill Tecnología 100% poliéster con cinta REFLECTIVA 3M para mayor visibilidad, con 2 bolsillos superiores con solapa. En la parte inferior tiene 2 bolsillos con cierre Rey y cierre principal Rey.",
+    "highlights": [
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 45.0,
+    "primaryImage": "./images/products/ch-02.png",
+    "images": [
+      "./images/products/ch-02.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "ch-03",
+    "code": "CH-03",
+    "title": "Chaleco Térmico Taslan con Forro Micropolar y Cinta 3M",
+    "category": "Chalecos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Taslan",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Tela Taslan con forro micropolar y cinta REFLECTIVA 3M para mayor visibilidad, con 2 bolsillos superiores con solapa y porta lapicero. En la parte inferior tiene 2 bolsillos con cierre Rey, 2 bolsillos con solapa y 2 bolsillos posa mano. Cierre principal Rey.",
+    "highlights": [
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 65.0,
+    "primaryImage": "./images/products/ch-03.png",
+    "images": [
+      "./images/products/ch-03.png",
+      "./images/products/ch-03-2.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "ch-04",
+    "code": "CH-04",
+    "title": "Chaleco Geólogo Supervisor Drill 100% Algodón Nuevo Mundo con Cinta 3M",
+    "category": "Chalecos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Drill Algodón Nuevo Mundo",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Tela Drill 100% algodón Nuevo Mundo con cinta REFLECTIVA 3M para mayor visibilidad, con 1 bolsillo superior porta radio. En la parte inferior tiene 2 bolsillos con cierre Rey y 2 bolsillos con solapa.",
+    "highlights": [
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Bolsillo Porta Radio Integrado",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 65.0,
+    "primaryImage": "./images/products/ch-04.png",
+    "images": [
+      "./images/products/ch-04.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "ch-05",
+    "code": "CH-05",
+    "title": "Chaleco Térmico Impermeable Hipora con Micropolar y Cinta 3M",
+    "category": "Chalecos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Tela Hipora impermeable con cinta REFLECTIVA 3M para mayor visibilidad, forro micropolar, 1 bolsillo superior con solapa. En la parte inferior tiene 2 bolsillos con cierre Rey y 2 bolsillos con solapa. Cuello alto y tapacierre con broche.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 75.0,
+    "primaryImage": "./images/products/ch-05.png",
+    "images": [
+      "./images/products/ch-05.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "ch-06",
+    "code": "CH-06",
+    "title": "Chaleco Industrial Supervisor Drill Tecnología con Cinta 3M",
+    "category": "Chalecos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Drill Tecnología",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Tela Drill Tecnología 100% poliéster con cinta REFLECTIVA 3M, con 3 bolsillos superiores con solapa y 2 bolsillos inferiores con solapa. Cierre principal Rey.",
+    "highlights": [
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 65.0,
+    "primaryImage": "./images/products/ch-06.png",
+    "images": [
+      "./images/products/ch-06.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "m-01",
+    "code": "M-01",
+    "title": "Mameluco Industrial Drill 100% Algodón Nuevo Mundo con Cinta 3M",
+    "category": "Mamelucos y Conjuntos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Drill Algodón Nuevo Mundo",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Mameluco en tela Drill 100% algodón Nuevo Mundo con cinta REFLECTIVA 3M para mayor visibilidad, 2 bolsillos en el pecho, 2 bolsillos posteriores, delanteros y laterales del pantalón. Cierre principal Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 120.0,
+    "primaryImage": "./images/products/m-01.png",
+    "images": [
+      "./images/products/m-01.png",
+      "./images/products/m-01-2.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "m-02",
+    "code": "M-02",
+    "title": "Mameluco Térmico Impermeable Hipora Impermeable con Cinta Reflectiva 3M",
+    "category": "Mamelucos y Conjuntos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Mameluco térmico en tela Hipora impermeable con cinta REFLECTIVA 3M para mayor visibilidad, 2 bolsillos en el pecho con solapa, 1 bolsillo derecho con cierre, capucha guardable. Cierre principal Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 180.0,
+    "primaryImage": "./images/products/m-02.png",
+    "images": [
+      "./images/products/m-02.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "m-03",
+    "code": "M-03",
+    "title": "Mameluco Minero Frío Extremo Hipora Oxford con Thinsulate 3M y Cinta 3M",
+    "category": "Mamelucos y Conjuntos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Oxford",
+    "thermal": "Thinsulate 3M + Micropolar (-15°C)",
+    "tempRating": "-15°C / +4,200 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Mameluco térmico en tela Hipora Oxford acolchada con THINSULATE 3M y micropolar. Cinta REFLECTIVA 3M, capucha guardable, puño elasticado, 2 bolsillos parche con cierre, 2 bolsillos posteriores, cintura elasticada, cierre principal Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "Aislamiento Térmico Thinsulate™ 3M",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 160.0,
+    "primaryImage": "./images/products/m-03.png",
+    "images": [
+      "./images/products/m-03.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "m-04",
+    "code": "M-04",
+    "title": "Conjunto Térmico 2 Piezas Hipora Impermeable con Micropolar y Cinta 3M",
+    "category": "Mamelucos y Conjuntos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Forro Micropolar Térmico (-5°C)",
+    "tempRating": "-5°C / +3,200 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Conjunto de trabajo 2 piezas (Casaca + Pantalón) en tela Hipora impermeable con forro micropolar. Cinta REFLECTIVA 3M, capucha guardable, puño elasticado, 2 bolsillos parche, 2 bolsillos posteriores, cintura elasticada, cierre principal Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "100% Impermeable y Cortaviento",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Capucha Guardable en Cuello",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 160.0,
+    "primaryImage": "./images/products/m-04.png",
+    "images": [
+      "./images/products/m-04.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "m-05",
+    "code": "M-05",
+    "title": "Mameluco Térmico Impermeable Hipora Impermeable con Cinta Reflectiva 3M",
+    "category": "Mamelucos y Conjuntos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Hipora Impermeable",
+    "thermal": "Fibra Térmica + Micropolar (-12°C)",
+    "tempRating": "-12°C / +4,000 msnm",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Mameluco térmico en tela Hipora acolchada con fibra térmica y micropolar. Cinta REFLECTIVA 3M, 2 bolsillos parche con solapa, 2 bolsillos posteriores, 1 bolsillo lateral en cada pierna. Cintura elasticada, cierre principal Rey con tapacierre sistema Velcro.",
+    "highlights": [
+      "Acolchado en Fibra Térmica de Alta Densidad",
+      "Forro Interior Micropolar Antialérgico",
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 150.0,
+    "primaryImage": "./images/products/m-05.png",
+    "images": [
+      "./images/products/m-05.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "m-06",
+    "code": "M-06",
+    "title": "Mameluco Industrial Drill Tecnología con Cinta Reflectiva 3M",
+    "category": "Mamelucos y Conjuntos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Drill Tecnología",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Mamelucos industriales en tela Drill Tecnología de alta resistencia en múltiples colores corporativos con cinta REFLECTIVA 3M, bolsillos multifunción en pecho y piernas, cintura elasticada y cierre principal Rey. (Ref. Catálogo M-04 Drill Tecnología)",
+    "highlights": [
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 90.0,
+    "primaryImage": "./images/products/m-06.png",
+    "images": [
+      "./images/products/m-06.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "m-07",
+    "code": "M-07",
+    "title": "Mameluco Industrial Drill Tecnología con Cinta Reflectiva 3M",
+    "category": "Mamelucos y Conjuntos",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Drill Tecnología",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Mameluco bicolor en tela Drill Tecnología 100% poliéster con cinta REFLECTIVA 3M, 2 bolsillos parche con solapa, 2 bolsillos posteriores, cintura elasticada, cierre principal Rey con tapacierre sistema Velcro. (Ref. Catálogo M-05 Drill)",
+    "highlights": [
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 90.0,
+    "primaryImage": "./images/products/m-07.png",
+    "images": [
+      "./images/products/m-07.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": false,
+    "customizableLogo": true
+  },
+  {
+    "id": "pt-01",
+    "code": "PT-01",
+    "title": "Pantalón Industrial Drill 100% Algodón Nuevo Mundo con Cinta 3M",
+    "category": "Pantalones",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Drill Algodón Nuevo Mundo",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Pantalón industrial en tela Drill 100% algodón Nuevo Mundo con cinta REFLECTIVA 3M para mayor visibilidad, 2 bolsillos en la parte delantera y posterior. Cintura elástica y cierre marca Rey.",
+    "highlights": [
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 45.0,
+    "primaryImage": "./images/products/pt-01.png",
+    "images": [
+      "./images/products/pt-01.png",
+      "./images/products/pt-01-2.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "pt-02",
+    "code": "PT-02",
+    "title": "Pantalón Industrial Jean Denim con Cinta Reflectiva 3M",
+    "category": "Pantalones",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Jean Industrial",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Pantalón industrial en tela Jean Denim de alto gramaje con cinta REFLECTIVA 3M para mayor visibilidad, 2 bolsillos en la parte delantera y posterior, costuras reforzadas para minería y construcción.",
+    "highlights": [
+      "Alta Visibilidad (Cinta Reflectiva 3M)"
+    ],
+    "referencePrice2024": 55.0,
+    "primaryImage": "./images/products/pt-02.png",
+    "images": [
+      "./images/products/pt-02.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  },
+  {
+    "id": "pt-03",
+    "code": "PT-03",
+    "title": "Pantalón Cargo Minero Drill Nuevo Mundo con Refuerzos y Cinta 3M",
+    "category": "Pantalones",
+    "sector": "Minería & Alta Visibilidad",
+    "fabric": "Drill Algodón Nuevo Mundo",
+    "thermal": "Industrial Estándar / Respirable",
+    "tempRating": "Todo Clima / Operaciones",
+    "reflective": "Cinta Reflectiva 3M",
+    "description": "Pantalón Cargo industrial en tela Drill 100% algodón Nuevo Mundo con refuerzos ergonómicos, cinta REFLECTIVA 3M para mayor visibilidad, 2 bolsillos delanteros y posteriores, y 1 bolsillo cargo lateral en cada pierna. Cintura elástica y cierre marca Rey.",
+    "highlights": [
+      "Alta Visibilidad (Cinta Reflectiva 3M)",
+      "Cierres Industriales Marca REY Original"
+    ],
+    "referencePrice2024": 80.0,
+    "primaryImage": "./images/products/pt-03.png",
+    "images": [
+      "./images/products/pt-03.png"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "isFeatured": true,
+    "customizableLogo": true
+  }
+];
+
+export const FULL_CATALOG_PDF_URL = "./catalogos/Catalogo_WHA_MOUNTAIN_Completo_2026.pdf";
+
+export const CATEGORY_SUMMARY = [
+  {
+    id: "Casacas" as ProductCategory,
+    name: "Casacas Térmicas & Mineras",
+    shortName: "Casacas",
+    count: 63,
+    rangeCode: "CAS-01 al CAS-63",
+    description: "Casacas en Hipora Impermeable, Hipora Oxford, Softshell y Taslan con Thinsulate™ 3M, forro Termoreflectivo, Fibra Térmica y Cinta Reflectiva 3M.",
+    image: "./images/products/cas-02.png",
+    coverImage: "./images/brand/cat-casacas.png",
+    badge: "-20°C Frío Extremo",
+    pdfUrl: "./catalogos/Catalogo_WHA_MOUNTAIN_Casacas.pdf",
+  },
+  {
+    id: "Chalecos" as ProductCategory,
+    name: "Chalecos Geólogos & Supervisores",
+    shortName: "Chalecos",
+    count: 6,
+    rangeCode: "CH-01 al CH-06",
+    description: "Chalecos técnicos en Drill 100% Algodón Nuevo Mundo, Drill Tecnología, Taslan e Hipora Impermeable con forro micropolar y Cinta Reflectiva 3M.",
+    image: "./images/products/ch-01.png",
+    coverImage: "./images/brand/cat-chalecos.png",
+    badge: "Alta Visibilidad 3M",
+    pdfUrl: "./catalogos/Catalogo_WHA_MOUNTAIN_Chalecos.pdf",
+  },
+  {
+    id: "Mamelucos y Conjuntos" as ProductCategory,
+    name: "Mamelucos & Conjuntos Térmicos",
+    shortName: "Mamelucos y Conjuntos",
+    count: 7,
+    rangeCode: "M-01 al M-07",
+    description: "Mamelucos térmicos para socavón y tajo abierto en Hipora Oxford con Thinsulate 3M, Conjuntos 2 piezas impermeables y Mamelucos en Drill Nuevo Mundo.",
+    image: "./images/products/m-03.png",
+    coverImage: "./images/brand/cat-mamelucos.png",
+    badge: "Protección Integral",
+    pdfUrl: "./catalogos/Catalogo_WHA_MOUNTAIN_Mamelucos.pdf",
+  },
+  {
+    id: "Pantalones" as ProductCategory,
+    name: "Pantalones Industriales & Cargo",
+    shortName: "Pantalones",
+    count: 3,
+    rangeCode: "PT-01 al PT-03",
+    description: "Pantalones industriales y Cargo con refuerzos en Drill 100% Algodón Nuevo Mundo y Jean Denim de alto gramaje con Cinta Reflectiva 3M y cierres Rey.",
+    image: "./images/products/pt-03.png",
+    coverImage: "./images/brand/cat-pantalones.png",
+    badge: "Alto Gramaje",
+    pdfUrl: "./catalogos/Catalogo_WHA_MOUNTAIN_Pantalones.pdf",
+  },
+];
